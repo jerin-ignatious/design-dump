@@ -4,7 +4,7 @@ import UploadForm from './uploadForm/UploadForm';
 
 export default function Body() {
     return (
-        <div>
+        <div className='body'>
             <UploadForm/>
         </div>
     )

@@ -54,7 +54,7 @@ export default function UploadForm() {
     return (
         <div className='upload-form'>
             <form onSubmit={handleSubmit}>
-                <div className='form-item' onSubmit={handleSubmit}>
+                <div className='form-item'>
                     <label>Name</label>
                     <br/>
                     <input
