@@ -35,7 +35,6 @@ export default function UploadForm() {
                 message: message,
             });
 
-            console.log("Document written with ID: ", docRef.id);
             setLoader(false);
             alert("Your design has been submitted👍");
         } catch (e) {
