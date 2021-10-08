@@ -21,7 +21,7 @@ export default function UploadForm() {
         setLoader(true);
 
         const storage = getStorage();
-        const storageRef = ref(storage, file.name);
+        const storageRef = ref(storage, email + '/' + file.name);
         uploadBytes(storageRef, file).then(() => {
         console.log('Uploaded file!');
         });
@@ -35,7 +35,6 @@ export default function UploadForm() {
                 message: message,
             });
 
-            console.log("Document written with ID: ", docRef.id);
             setLoader(false);
             alert("Your design has been submitted👍");
         } catch (e) {
