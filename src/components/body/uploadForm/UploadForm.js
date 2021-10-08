@@ -21,7 +21,7 @@ export default function UploadForm() {
         setLoader(true);
 
         const storage = getStorage();
-        const storageRef = ref(storage, file.name);
+        const storageRef = ref(storage, email + '/' + file.name);
         uploadBytes(storageRef, file).then(() => {
         console.log('Uploaded file!');
         });
