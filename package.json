@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "react-carousel-minimal": "^1.4.1",
     "react-modal": "^3.14.3"
   }
 }

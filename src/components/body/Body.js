@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
 import ReactModal from 'react-modal';
 import './body.css'
-import Slider from './slider/Slider'
 import UploadForm from './uploadForm/UploadForm';
 
 export default function Body() {
 
-    const [modalIsOpen, setModalIsOpen] = useState(false)
+    const [modalIsOpen, setModalIsOpen] = useState(false);
 
     return (
         <div className='body'>
-            <Slider/>
             <button 
                 className = 'modal-button'
                 onClick={() => setModalIsOpen(true)}

@@ -3,18 +3,6 @@
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  width: 80%;
   margin: auto;
   min-height: 100vh;
-}
-
-@media only screen and (max-width: 1024px) {
-  .app {
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 512px) {
-  .app {
-    width: 100%;
-  }
 }
