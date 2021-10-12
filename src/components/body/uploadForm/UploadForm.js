@@ -21,7 +21,7 @@ export default function UploadForm() {
         
         e.preventDefault();
 
-        if(!name.match(/[a-zA-Z]/)){
+        if(!name.match(/^[a-zA-Z ]*$/)){
             setNameError(true);
         }
         else if(phone.length !== 10 || !phone.match(/[0-9]/)){
@@ -48,20 +48,20 @@ export default function UploadForm() {
                 });
 
                 setLoader(false);
-                alert("Your design has been submitted👍");
+                alert("Your design has been submitted👍 \nWe will contact you once your design is ready");
             } catch (e) {
                 console.error("Error adding document: ", e);
                 alert("Error while submitting your design");
                 setLoader(false);
             }
+            
+            document.getElementById("filename").value = null;
+            setName('');
+            setEmail('');
+            setPhone('');
+            setFile('');
+            setMessage('');
         }
-        
-        document.getElementById("filename").value = null;
-        setName('');
-        setEmail('');
-        setPhone('');
-        setFile('');
-        setMessage('');
     }
 
     return (
