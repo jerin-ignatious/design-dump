@@ -20,12 +20,9 @@
 }
 
 .close-button{
-    background-color: skyblue;
-    border: none;
     padding: 4px 16px;
     margin-left: 16px;
     font-size: 16px;
-    border-radius: 6px;
 }
 
 .modal{

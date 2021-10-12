@@ -46,3 +46,19 @@
   min-width: 80%;
   min-height: 100px;
 }
+
+@media only screen and (max-width: 720px){
+  .form-item {
+    font-size: 16px;
+  }
+
+  .form-item > input {
+    width: 60%;
+  }
+
+  .form-item > textarea {
+    height: 120px;
+    min-width: 60%;
+    min-height: 100px;
+  }
+}

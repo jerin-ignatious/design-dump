@@ -24,11 +24,11 @@ export default function Body() {
                         <UploadForm/>
                     </div>
                     <div>
-                        <button className = 'close-button'
+                        <div className = 'close-button'
                             onClick={() => setModalIsOpen(false)}
                         >
-                            Close
-                        </button>
+                            <i className='fa fa-close'></i>
+                        </div>
                     </div>
                 </div>
             </ReactModal>
