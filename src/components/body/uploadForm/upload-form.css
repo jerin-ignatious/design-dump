@@ -24,6 +24,7 @@
 .form-item > input {
   padding: 4px 16px;
   border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
   width: 80%;
   border: 1px solid lightgray;
   /* border: none; */
@@ -36,6 +37,7 @@
 .form-item > textarea {
   padding: 4px 16px;
   border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
   border: 1px solid lightgray;
   /* border: none; */
   background: #fff;
@@ -45,4 +47,20 @@
   height: 130px;
   min-width: 80%;
   min-height: 100px;
+}
+
+@media only screen and (max-width: 720px){
+  .form-item {
+    font-size: 16px;
+  }
+
+  .form-item > input {
+    width: 60%;
+  }
+
+  .form-item > textarea {
+    height: 120px;
+    min-width: 60%;
+    min-height: 100px;
+  }
 }
